@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	overflow: hidden;
+	animation: bodyShake linear .9s infinite;
+}
+.sky{
+	width: 100%;
+	height: 100vh;
+	background-image:url(Iqbc14.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	
+	
+}
+.sky p{
+	text-align: right;
+     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin-top: 50px;
+	margin-right: 20px;
+}
+.bg{
+	width: 100%;
+	height: 100vh;
+	background-image:url(pngegg.png);
+	background-size: cover;
+    position: absolute;
+	top: -20vh;
+	
+}
+.track{
+	width: 600vw;
+	height: 30vh;
+	background-image:url(track.png);
+	background-repeat: repeat-x;
+	background-size: contain;
+    position: absolute;	
+	top: 75vh;
+	animation: carMove linear 10s infinite;
+}
+.car{
+	width: 18vw;
+	height: 8vh;
+	background-image:url(112-1120387_lamborghini-clip-art.png);
+	background-repeat: repeat-x;
+	background-size: cover;
+    position: absolute;	
+	top: 75vh;
+	left: 5vw;
+	animation: carShake linear .9s infinite;
+}
+.tire1 img{
+	width: 46px;
+	position: absolute;
+	left: 24px;
+	top: 21px;
+	animation: wheelRotate linear .10s infinite;
+	
+}
+.tire2 img{
+	width: 50px;
+	position: absolute;
+	left: 172px;
+	top: 23px;
+	animation: wheelRotate linear .10s infinite;
+	
+}
+@keyframes wheelRotate{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes carMove{
+	100%{
+		transform: translateX(-500vw);
+	}
+	
+}
+@keyframes carShake{
+	0%{
+		transform: translateY(3px);
+		
+	}
+	50%{
+		transform: translateY(-3px);
+	}
+	100%{
+		transform: translateY(3px);
+	}
+	
+}
+@keyframes bodyShake{
+	0%{
+		transform: translateY(4px);
+		
+	}
+	50%{
+		transform: translateY(-4px);
+	}
+	100%{
+		transform: translateY(4px);
+    }
+}
+
+	
